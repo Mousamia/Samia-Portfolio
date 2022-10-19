@@ -84,10 +84,6 @@ body .container .header .its-me button {
   font-weight: bolder;
 }
 
-body .container .header .navbar {
-  border: 3px solid green;
-}
-
 body .container .header .navbar .icon {
   width: 20px;
   height: 20px;
@@ -749,15 +745,11 @@ body .container .footer .location-form .form button {
     width: 40%;
     margin-right: 2%;
   }
-  body .container .header .navbar {
-    padding-top: 6%;
-    border: 2px solid yellow;
-  }
   body .container .header .navbar .icon {
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
     display: block;
     opacity: .9;
-    border: 5px solid yellow;
   }
   body .container .header .navbar ul {
     display: none;
