@@ -2,10 +2,3 @@
 //You need to be online to view the icons.
 
 
-
- width: 80%;
-            background-color: $blue-2;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 5%;

@@ -11,10 +11,10 @@ $white: #ffffff;
 
 body{
     
-    
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     color: whitesmoke;
-   
     //font-family: 'Poppins', sans-serif;
     //font-family: 'Proza Libre', sans-serif;
 
@@ -22,12 +22,11 @@ body{
 .container{
 
     width: 100%;
-    background-color: $white;
   
     .header{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         background-color: $blue-2;
         width: 100%;
         
@@ -190,77 +189,62 @@ body{
     
     
     }
-
-
-
+    
     .main{
    
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: $white;
 
 
         .sub-main{
             
-            min-width: 30%;
-            font-family:  'sans-serif';
-            margin-left: 2%;
-            margin-top: 5%;
-            
+            width: 30%;
+
             h1{
                 color: $blue-2;
+                font-family: poppins;
+                text-align: left;
                 padding-left: 5%;
-                font-family: 'poppins';
-                font-weight: bolder;
-                position: relative;
-       
+                border-bottom: 2px solid $blue-2;
             }
 
-            h1:after{
-                content: '';
-                display: block;
-                position: absolute;
-                width: 70px;
-                bottom: -9px;
-                left: 15px;
-                border: 3px solid $grey;
-
-            }
-
-            .education-1, .education-2, .education-3{
-               
-                color: $grey;
-                margin-top: 5px;
-                width: 350px;
-                height: 160px;
-                border-bottom: 1px solid $grey;
+            .education{
                 padding: 5%;
-                margin-left: 3%;
+                border-right: 2px solid $grey;
+                .education-1, .education-2, .education-3{
+
                 
-
-                .fa{
-                    color: $grey;
-                    font-size: 20px;
-                }
-
-                h2{
                     color: $blue-2;
-                    font-size: 22px;
-                }
-
-                h4{
-                    font-size: 20px;
-                    word-spacing: 3px;
-                    font-weight: lighter;
-                }
-
-
+                    width: 100%;
+                    border-bottom: 2px solid $grey;
+                   
+    
+    
+                    
+                    h2{
+                        color: $blue-2;
+                        font-size: 22px;
+                    }
+    
+                    .ins{
+                        .fa{
+                            color: $blue-2;
+                            font-size: 18px;
+                        }
+        
+                        
+                    }
+    
+    
+                    
+                } 
                 
-            } 
-            
-            .education-3{
-                border-bottom: none;
+                .education-3{
+                    border-bottom: none;
+                }
             }
             
             
@@ -268,10 +252,7 @@ body{
 
         .sub-content{
 
-
-             width: 65%;
-             background-color: $white;
-             border-left: 5px solid $light-grey;
+             width:69%;
              background-color: $white;
              display: flex;
              flex-direction: column;
@@ -282,23 +263,11 @@ body{
                 color: $blue-2;
                 padding-left: 5%;
                 font-family: 'poppins';
-                position: relative;
-                font-weight: lighter;
-    
-    
+                border-bottom: 2px solid $blue-2;
+
+           
             }
     
-            h1:after{
-                content: '';
-                display: block;
-                position: absolute;
-                width: 70px;
-                bottom: -9px;
-                left: 15px;
-                border: 3px solid $grey;
-    
-            }
-             
  
              .skillset-1{
                  
@@ -328,7 +297,9 @@ body{
  
                      
                          ul{
+                           
                              list-style-type: none;
+                             column-count: 2;
                              li{
                                  display: block;
                                  padding: 10px;
@@ -416,93 +387,96 @@ body{
     .portfolio{
         width: 100%;
         background-color: $blue-2;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        
        
-        .card-1, .card-2, .card-3{
-            border: 1px solid $grey;
-            max-width: 25%;
-            padding: 3%;
-            box-shadow: 2px 2px 2px $dark-blue;
-            
-
+        .cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .card-1, .card-2, .card-3{
+                border: 1px solid $grey;
+                width: 25%;
+                padding: 3%;
+                
+                
     
-            .transition{
-
-                position: relative;
-             
-
-                img{
+        
+                .transition{
+    
+                    position: relative;
+                 
+    
+                    img{
+                        
+                        width:100%;
+                        height: 200px;
+                        object-fit: cover;
+                        object-position: (30%);
+                    }
+    
+                    .top{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: bolder;
+                        font-family: poppins;
+                    }
+    
+                    .layer{
+                        position: absolute;
+                        width:100%;
+                        height: 200px;
+                        background-color:  $Baby-Blue;
+                        transition: opacity 1s ;
+                        opacity: 0;
+                        
+                    }
+    
+                    .layer:hover{
+                        opacity: .9;
+                        color: $blue-2;
+                        
+                        
+                    }
+    
+                 
                     
-                    width:100%;
-                    height: 200px;
-                    object-fit: cover;
-                    object-position: (30%);
                 }
-
-                .top{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-weight: bolder;
+    
+                .click-me{
+                    padding: 20px;
                     font-family: poppins;
-                }
-
-                .layer{
-                    position: absolute;
-                    width:100%;
-                    height: 200px;
-                    background-color:  $Baby-Blue;
-                    transition: opacity 1s ;
-                    opacity: 0;
+                    word-spacing: 5px;
                     
-                }
-
-                .layer:hover{
-                    opacity: .9;
-                    color: $blue-2;
-                    
-                    
-                }
-
-             
-                
-            }
-
-            .click-me{
-                padding: 20px;
-                font-family: poppins;
-                word-spacing: 5px;
-                
-
-                strong{
-                    color: $light-grey;
-                }
-
-                
-
-                button{
-                    background-color: $Baby-Blue;
-                    padding: 8px 16px;
-                    border: 1px solid $Baby-Blue;
-                    border-radius: 25px;
-                    font-weight: bold;
-                    color: $blue-2;
-                    
-                }
-                a{
-                    text-decoration: none;
-                }
-
-                
-
-
-                
     
+                    strong{
+                        color: $light-grey;
+                    }
+    
+                    
+    
+                    button{
+                        background-color: $Baby-Blue;
+                        padding: 8px 16px;
+                        border: 1px solid $Baby-Blue;
+                        border-radius: 25px;
+                        font-weight: bold;
+                        color: $blue-2;
+                        
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+    
+                    
+    
+    
+                    
+        
+                }
+                
+                
             }
-            
-            
         }
 
 
@@ -525,25 +499,23 @@ body{
     .know-me{
         
         width: 100%;
-        background-color: $white;
-        color:black;
+       background-color: $white;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         font-family: poppins;
        
         .about-me{
-            min-width:30%;
-            position: relative;
+           
+            
             display: flex;
             flex-direction: row;
             padding: 5%;
             
 
             h4{
-                height:300px;
-                background-color:$blue-2;
+               height:300px;
                 writing-mode: vertical-rl;
+                background-color:$blue-2;
                 color: $white;
                 rotate: 180deg;
                 text-align: center;
@@ -552,6 +524,7 @@ body{
             p{
                 padding: 10%;
                 font-size: medium;
+                color:$blue-2;
                 
             }
         }
@@ -590,6 +563,7 @@ body{
         width: 100%;
         background-color: $blue-2;
         font-family: poppins;
+        
 
         svg{
             margin-top: 20%;
@@ -660,112 +634,116 @@ body{
  
     
     .footer{
-        background-color: $light-grey;
-        font-family: poppins;
-        color: $blue-2;
-        padding-bottom: 5%;
         width: 100%;
-
-
-        h1{
-            text-align: center;
-
-            span{
-                color: $Baby-Blue;
-            }
-
-        }
-
-        p{
-            text-align: center;
-            color: $blue-2;
-
-            
-            
-
-        }
-
-        .location-form{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-           
-
-            .location{
-                text-align: left;
-                font-weight: lighter;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                p{
-                    text-align: left;
-                    a{
-                        color: black;
-                        text-decoration: none;
-                    }
-                }
-
-
-                
-            }
-
-            .form{
-                max-width: 60%;
-
-                
-
-                p{
-                    text-align: left;
-                }
-                
-                .name-email{
-                    margin-bottom: 5%;
-
-                   input{
-                    width: 300px;
-                    height: 50px;
-                    border-radius: 25px;
-                    border: 2px solid $Baby-Blue;
-                    margin-right: 25px;
-
-
-                    input:hover{
-                        
-                            border: 2px solid $blue-2;
-                           
-                    }
-                    
-                   }
-
-
-                }
-
-                
-
-                .message{
-                    textarea{
-                        border-radius: 25px;
-                        border: 1px solid $Baby-Blue;
-                        
-                    }
-                    
-                }
-
-                button{
-                    background-color: $blue-2;
-                    padding: 16px 32px;
-                    color: $Baby-Blue;
-                    border-radius: 25px;
-                    margin-top: 3%;
-                    border: 1px solid $Baby-Blue;
-
-                }
-                
-                
-            }
-            
-        }
+        background-color: $light-grey;
         
+        .footer-main{
+            
+            font-family: poppins;
+            color: $blue-2;
+            padding-bottom: 5%;
+            
+    
+    
+            h1{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+    
+                span{
+                    color: $Baby-Blue;
+                }
+    
+            }
+    
+            p{
+                text-align: center;
+                color: $blue-2;  
+    
+            }
+    
+            .location-form{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+               
+    
+                .location{
+                    text-align: left;
+                    font-weight: lighter;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    p{
+                        text-align: left;
+                        a{
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+    
+    
+                    
+                }
+    
+                .form{
+                    max-width: 60%;
+    
+                    
+    
+                    p{
+                        text-align: left;
+                    }
+                    
+                    .name-email{
+                        margin-bottom: 5%;
+    
+                       input{
+                        width: 300px;
+                        height: 50px;
+                        border-radius: 25px;
+                        border: 2px solid $Baby-Blue;
+                        margin-right: 25px;
+    
+    
+                        input:hover{
+                            
+                                border: 2px solid $blue-2;
+                               
+                        }
+                        
+                       }
+    
+    
+                    }
+    
+                    
+    
+                    .message{
+                        textarea{
+                            border-radius: 25px;
+                            border: 1px solid $Baby-Blue;
+                            
+                        }
+                        
+                    }
+    
+                    button{
+                        background-color: $blue-2;
+                        padding: 16px 32px;
+                        color: $Baby-Blue;
+                        border-radius: 25px;
+                        margin-top: 3%;
+                        border: 1px solid $Baby-Blue;
+    
+                    }
+                    
+                    
+                }
+                
+            }
+            
+        }
     }
     
 
@@ -775,23 +753,8 @@ body{
 
 
 
-
-
 //Breakeven points
 @media (max-width:600px){
-   
-      
-
-   
-}
-
-@media (max-width:768px){
-   
-   
- 
-}
-
-@media (max-width:992px){
     body{
     
         .container{
@@ -858,8 +821,188 @@ body{
                         width:40%;
                         margin-right: 2%;
 
+                    }
+                
+         
+                }
+        
+                
+                .navbar{
+                    margin-top: 3%;
+                    .icon{
+                        
+                        margin-left: 10%;
+                        display: block;
+                        opacity: .9;
                         
                     }
+
+                    ul{
+                        display: none;
+                    }
+        
+                    
+                }
+                
+                
+                
+            }
+    
+           
+            
+    
+           
+            .know-me{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .about-me{
+                    
+                    h4{
+                        
+                        height: 400px;
+                        margin-top: 80px;
+                        font-size: 1.3rem;
+                    }
+    
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+    
+                .about-me-2{
+                    margin-top: 0;
+                    
+                    .part-1{
+                        width: 100%;
+                        svg{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-left: 25%;
+                        }
+
+                    }
+                   
+                }
+    
+    
+                
+            }
+    
+            .know-me-2{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .hobbies{
+                    .hobby{
+                        width: 120px;
+                        height: 130px;
+                        .fa{
+                            font-size: 0.8rem;
+                        }
+
+                    }
+                }
+                
+                svg{
+                    
+                    display: none;
+                }
+    
+            }
+    
+           
+    
+        }
+    
+    
+    }
+   
+      
+
+   
+}
+
+@media (max-width:768px){
+   
+   
+   
+ 
+}
+
+@media (max-width:992px){
+    body{
+    
+        .container{
+            width: 100%;
+    
+            .header{
+    
+                width: 100%;
+                height: 900px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-between;
+    
+                .image{
+                    width: 100%;
+                    margin-top: 0;
+                                    
+                        .border{
+                            width: 100%;
+                            height: 300px;
+                            background-color: $Baby-Blue;
+                            border: 5px solid $grey;
+                            clip-path: circle(105px at center);
+
+                            
+                            img{
+                                width: 100%;
+                                height: 300px;
+                                object-fit: contain;  
+                                clip-path: circle(100px at center);
+                                filter: grayscale(40%);
+                                
+                            
+                            }
+                        }
+        
+                    
+                    
+                }
+    
+           
+                .hr{
+                    display: none;
+                }
+        
+                .its-me{
+                    text-align: center;
+                    padding-top: 0;
+        
+              
+                    h4{
+                        font-size: 1.5rem;
+                    }
+        
+                    h1{
+                        font-size: 3rem;
+                        line-height: 1.5em;
+                        span{
+                            color: $Baby-Blue;
+                        }
+                    }
+    
+                    button{
+                        width:40%;
+                        margin-right: 2%;
+
+                    }
+                
          
                 }
         
@@ -888,129 +1031,114 @@ body{
             }
     
             .main{
-            
+
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    background-color: $white;
                     
-            
                     .sub-main{
-                        margin-top: 12%;
-                        max-width: 100%;
+                        
+                        width: 100%;                            
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: center;
-                        background-color: grey;
                         
+
                         h1{
+                                
                             color: $blue-2;
-                            padding-left: 5%;
                             font-family: 'poppins';
-                            font-weight: bolder;
-                            position: relative;
-                            font-size: 4rem;
+                            font-weight: bold;
+                            font-size: 3rem;
+                            border-bottom: 3px solid $blue-2;
                    
                         }
-            
-                        h1:after{
-                            content: '';
-                            display: block;
-                            position: absolute;
-                            width: 140px;
-                            bottom: -9px;
-                            left: 120px;
-                            border: 3px solid $blue-2;
-            
-                        }
-                        .education-1, .education-2, .education-3{
-                   
-                            color: $grey;
-                            width: 580px;
-                            height: 320px;
-                            border-bottom: 1px solid $grey;
-                            padding: 2%;
-                            margin: 3%;
-                            background-color: $Baby-Blue;
-                            border-radius: 15% 5%;
-                            
-            
-                            .fa{
-                                color: $grey;
-                                font-size: 2rem;
-                            }
-            
-                            h2{
-                                color: $blue-2;
-                                font-size: 3rem;
-                            }
-            
-                            h4{
-                                font-size: 1.8rem;
-                                word-spacing: 3px;
-                                font-weight: lighter;
-                            }
-    
-                            p{
-                                font-size: 1.8rem;
-    
-                            }
-            
-            
-                            
-                        } 
                         
-                        .education-3{
-                            border-bottom: none;
+                        .education{
+                            
+                            padding: 5%;
+                            border:none;
+
+                            .education-1, .education-2, .education-3{
+                                padding: 0;
+                                color: $blue-2;
+                                margin: 2% 0;
+                              
+                                .ins{
+                                    
+                                
+                                    .fa{
+                                        color: $blue-2;
+                                        font-size: 1.5rem;
+                                    }
+                    
+                                    h2{
+                                        color: $blue-2;
+                                        font-size: 2rem;
+                                    }
+                    
+                                    p{
+                                        font-size: 1.2rem;
+            
+                                    }
+                    
+                                }
+                           
+                                
+                
+                                
+                            } 
+                            
+                            .education-3{
+                                border-bottom: none;
+                            }
                         }
+
+
+                        
+                        
+                        
+            
+                       
+                        
                     }
             
                     .sub-content{
                         width: 100%;
+                        background-color: $blue-2;
     
                         h1{
-                            color: $blue-2;
-                            padding-left: 5%;
+                            color: $white;
                             font-family: 'poppins';
-                            font-weight: bolder;
-                            position: relative;
-                            font-size: 4rem;
-                            text-align: center;
+                            font-weight: bold;
+                            font-size: 3rem;
+                            border-bottom: 3px solid $white;
                    
                         }
             
-                        h1:after{
-                            content: '';
-                            display: block;
-                            position: absolute;
-                            width: 140px;
-                            left: 420px;
-                            border-top: none;
-                            border-left: none;
-                            border-right: none;
-                            border-bottom: 3px solid $blue-2;
-            
-                        }
+                        
     
                         .skillset-1{
                      
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-around;
+                            justify-content: center;
                             padding: 2%;
                        
             
                             .skills-1, .skills-2, .skills-3, .skills-4, .skills-5, .skills-6 {
             
                                 h3{
-                                    color: $blue-2;
+                                    color: $white;
                                     font-size: 1.5rem;
                                     font-weight: bold;
                                     padding-bottom: 2px;
                                     
                                     i{
-                                        color: $Blue;
-                                        font-size: 1.8rem;
+                                        color: $Baby-Blue;
+                                        font-size: 1.9rem;
                                         padding: 5px;
                                     }
             
@@ -1021,15 +1149,18 @@ body{
             
                                 
                                     ul{
+                                        
                                         list-style-type: none;
                                         li{
                                             display: block;
                                             padding: 10px;
                                             cursor: pointer;
-                                            a{
-                                                font-size: 1.5rem;
-                                                text-decoration: none;
-                                            }
+                                            color: $white;
+                                          
+                                        }
+                                        i{
+                                            color: white;
+                                            font-size: 1.2rem;
                                         }
                                     }
                                 
@@ -1107,17 +1238,19 @@ body{
             
     
             .portfolio{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
+                width: 100%;
+                
     
-                .card-1, .card-2, .card-3{
-                    align-items: flex-end;
-                    max-width: 90%;
-                    padding: 5%;
-                    margin: 10px 0px;
-                    background-color: $blue-2;
-                    margin-top: 3%;
+                .cards{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .card-1, .card-2, .card-3{
+                        width: 100%;
+                        padding: 0;
+                        background-color: $blue-2;
+                        border-bottom: 2px solid $grey;
+                    }
                 }
             }
     
@@ -1125,11 +1258,10 @@ body{
             .know-me{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 width: 100%;
     
                 .about-me{
-    
+                    
                     h4{
                         
                         height: 400px;
@@ -1142,9 +1274,17 @@ body{
                 }
     
                 .about-me-2{
+                    margin-top: 0;
                     
-                    svg{
+                    .part-1{
                         width: 100%;
+                        svg{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-left: 25%;
+                        }
+
                     }
                    
                 }
@@ -1154,18 +1294,11 @@ body{
             }
     
             .know-me-2{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-    
-                h4{
-    
-                    height: 400px;
-                        font-size: 1.3rem;
-                    
-    
-                }
-    
+                
                 svg{
                     
                     display: none;
@@ -1174,59 +1307,65 @@ body{
             }
     
             .footer{
-                width: 100%;
-    
-                .location-form{
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: center;
-    
-                    .location{
+                .footer-main{
+                    width: 100%;
+        
+                    .location-form{
                         display: flex;
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        a{
-                            display: none;
-                           
+                        flex-direction: column-reverse;
+                        justify-content: center;
+        
+                        .location{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+                            color: $blue-2;
+                            a{
+                                display: none;
+                               
+                            }
+        
+                            p{
+                                font-size: 2rem;
+                                i{
+                                    display: flex;
+                                    justify-content: center;
+        
+                                }
+                            }
+               
                         }
-    
-                        p{
-                            font-size: 2rem;
-                            i{
-                                display: flex;
-                                justify-content: center;
-    
+        
+                        .form{
+                            min-width: 90%;
+                            p{
+                                font-size: 1.5rem;
+                                padding: 3%;  
+                            }
+                           
+                            
+                            .name-email{
+                                padding: 3%;
+                                input{
+                                    margin-top: 10px;
+                                }
+                                
+        
+                            }
+        
+                            .message{
+                                font-size: 1.7rem;
+                                padding: 2%;
+                            }
+        
+                            button{
+                                margin-left: 3%;
+                                font-size: 1.3rem;
                             }
                         }
-           
                     }
-    
-                    .form{
-                        min-width: 90%;
-                        p{
-                            font-size: 1.5rem;
-                            padding: 3%;  
-                        }
-                       
-                        
-                        .name-email{
-                            padding: 3%;
-                            
-    
-                        }
-    
-                        .message{
-                            font-size: 1.7rem;
-                            padding: 2%;
-                        }
-    
-                        button{
-                            margin-left: 3%;
-                            font-size: 1.3rem;
-                        }
-                    }
+        
                 }
-    
             }
     
     
