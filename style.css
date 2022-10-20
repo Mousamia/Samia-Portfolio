@@ -1,11 +1,12 @@
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   color: whitesmoke;
 }
 
 body .container {
   width: 100%;
-  background-color: #ffffff;
 }
 
 body .container .header {
@@ -16,9 +17,8 @@ body .container .header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #050A30;
   width: 100%;
 }
@@ -156,67 +156,48 @@ body .container .main {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #ffffff;
 }
 
 body .container .main .sub-main {
-  min-width: 30%;
-  font-family: 'sans-serif';
-  margin-left: 2%;
-  margin-top: 5%;
+  width: 30%;
 }
 
 body .container .main .sub-main h1 {
   color: #050A30;
+  font-family: poppins;
+  text-align: left;
   padding-left: 5%;
-  font-family: 'poppins';
-  font-weight: bolder;
-  position: relative;
+  border-bottom: 2px solid #050A30;
 }
 
-body .container .main .sub-main h1:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 70px;
-  bottom: -9px;
-  left: 15px;
-  border: 3px solid #787A91;
-}
-
-body .container .main .sub-main .education-1, body .container .main .sub-main .education-2, body .container .main .sub-main .education-3 {
-  color: #787A91;
-  margin-top: 5px;
-  width: 350px;
-  height: 160px;
-  border-bottom: 1px solid #787A91;
+body .container .main .sub-main .education {
   padding: 5%;
-  margin-left: 3%;
+  border-right: 2px solid #787A91;
 }
 
-body .container .main .sub-main .education-1 .fa, body .container .main .sub-main .education-2 .fa, body .container .main .sub-main .education-3 .fa {
-  color: #787A91;
-  font-size: 20px;
+body .container .main .sub-main .education .education-1, body .container .main .sub-main .education .education-2, body .container .main .sub-main .education .education-3 {
+  color: #050A30;
+  width: 100%;
+  border-bottom: 2px solid #787A91;
 }
 
-body .container .main .sub-main .education-1 h2, body .container .main .sub-main .education-2 h2, body .container .main .sub-main .education-3 h2 {
+body .container .main .sub-main .education .education-1 h2, body .container .main .sub-main .education .education-2 h2, body .container .main .sub-main .education .education-3 h2 {
   color: #050A30;
   font-size: 22px;
 }
 
-body .container .main .sub-main .education-1 h4, body .container .main .sub-main .education-2 h4, body .container .main .sub-main .education-3 h4 {
-  font-size: 20px;
-  word-spacing: 3px;
-  font-weight: lighter;
+body .container .main .sub-main .education .education-1 .ins .fa, body .container .main .sub-main .education .education-2 .ins .fa, body .container .main .sub-main .education .education-3 .ins .fa {
+  color: #050A30;
+  font-size: 18px;
 }
 
-body .container .main .sub-main .education-3 {
+body .container .main .sub-main .education .education-3 {
   border-bottom: none;
 }
 
 body .container .main .sub-content {
-  width: 65%;
-  background-color: #ffffff;
-  border-left: 5px solid #EEEEEE;
+  width: 69%;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,18 +215,7 @@ body .container .main .sub-content h1 {
   color: #050A30;
   padding-left: 5%;
   font-family: 'poppins';
-  position: relative;
-  font-weight: lighter;
-}
-
-body .container .main .sub-content h1:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 70px;
-  bottom: -9px;
-  left: 15px;
-  border: 3px solid #787A91;
+  border-bottom: 2px solid #050A30;
 }
 
 body .container .main .sub-content .skillset-1 {
@@ -276,6 +246,8 @@ body .container .main .sub-content .skillset-1 .skills-1 h3 i, body .container .
 
 body .container .main .sub-content .skillset-1 .skills-1 ul, body .container .main .sub-content .skillset-1 .skills-2 ul, body .container .main .sub-content .skillset-1 .skills-3 ul, body .container .main .sub-content .skillset-1 .skills-4 ul, body .container .main .sub-content .skillset-1 .skills-5 ul, body .container .main .sub-content .skillset-1 .skills-6 ul {
   list-style-type: none;
+  -webkit-column-count: 2;
+          column-count: 2;
 }
 
 body .container .main .sub-content .skillset-1 .skills-1 ul li, body .container .main .sub-content .skillset-1 .skills-2 ul li, body .container .main .sub-content .skillset-1 .skills-3 ul li, body .container .main .sub-content .skillset-1 .skills-4 ul li, body .container .main .sub-content .skillset-1 .skills-5 ul li, body .container .main .sub-content .skillset-1 .skills-6 ul li {
@@ -345,6 +317,9 @@ body .container .main .sub-content .skillset-1 .skills-1 .loader .react, body .c
 body .container .portfolio {
   width: 100%;
   background-color: #050A30;
+}
+
+body .container .portfolio .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,19 +331,17 @@ body .container .portfolio {
       justify-content: space-around;
 }
 
-body .container .portfolio .card-1, body .container .portfolio .card-2, body .container .portfolio .card-3 {
+body .container .portfolio .cards .card-1, body .container .portfolio .cards .card-2, body .container .portfolio .cards .card-3 {
   border: 1px solid #787A91;
-  max-width: 25%;
+  width: 25%;
   padding: 3%;
-  -webkit-box-shadow: 2px 2px 2px #0F044C;
-          box-shadow: 2px 2px 2px #0F044C;
 }
 
-body .container .portfolio .card-1 .transition, body .container .portfolio .card-2 .transition, body .container .portfolio .card-3 .transition {
+body .container .portfolio .cards .card-1 .transition, body .container .portfolio .cards .card-2 .transition, body .container .portfolio .cards .card-3 .transition {
   position: relative;
 }
 
-body .container .portfolio .card-1 .transition img, body .container .portfolio .card-2 .transition img, body .container .portfolio .card-3 .transition img {
+body .container .portfolio .cards .card-1 .transition img, body .container .portfolio .cards .card-2 .transition img, body .container .portfolio .cards .card-3 .transition img {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
@@ -377,7 +350,7 @@ body .container .portfolio .card-1 .transition img, body .container .portfolio .
      object-position: 30%;
 }
 
-body .container .portfolio .card-1 .transition .top, body .container .portfolio .card-2 .transition .top, body .container .portfolio .card-3 .transition .top {
+body .container .portfolio .cards .card-1 .transition .top, body .container .portfolio .cards .card-2 .transition .top, body .container .portfolio .cards .card-3 .transition .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +364,7 @@ body .container .portfolio .card-1 .transition .top, body .container .portfolio 
   font-family: poppins;
 }
 
-body .container .portfolio .card-1 .transition .layer, body .container .portfolio .card-2 .transition .layer, body .container .portfolio .card-3 .transition .layer {
+body .container .portfolio .cards .card-1 .transition .layer, body .container .portfolio .cards .card-2 .transition .layer, body .container .portfolio .cards .card-3 .transition .layer {
   position: absolute;
   width: 100%;
   height: 200px;
@@ -401,22 +374,22 @@ body .container .portfolio .card-1 .transition .layer, body .container .portfoli
   opacity: 0;
 }
 
-body .container .portfolio .card-1 .transition .layer:hover, body .container .portfolio .card-2 .transition .layer:hover, body .container .portfolio .card-3 .transition .layer:hover {
+body .container .portfolio .cards .card-1 .transition .layer:hover, body .container .portfolio .cards .card-2 .transition .layer:hover, body .container .portfolio .cards .card-3 .transition .layer:hover {
   opacity: .9;
   color: #050A30;
 }
 
-body .container .portfolio .card-1 .click-me, body .container .portfolio .card-2 .click-me, body .container .portfolio .card-3 .click-me {
+body .container .portfolio .cards .card-1 .click-me, body .container .portfolio .cards .card-2 .click-me, body .container .portfolio .cards .card-3 .click-me {
   padding: 20px;
   font-family: poppins;
   word-spacing: 5px;
 }
 
-body .container .portfolio .card-1 .click-me strong, body .container .portfolio .card-2 .click-me strong, body .container .portfolio .card-3 .click-me strong {
+body .container .portfolio .cards .card-1 .click-me strong, body .container .portfolio .cards .card-2 .click-me strong, body .container .portfolio .cards .card-3 .click-me strong {
   color: #EEEEEE;
 }
 
-body .container .portfolio .card-1 .click-me button, body .container .portfolio .card-2 .click-me button, body .container .portfolio .card-3 .click-me button {
+body .container .portfolio .cards .card-1 .click-me button, body .container .portfolio .cards .card-2 .click-me button, body .container .portfolio .cards .card-3 .click-me button {
   background-color: #7EC8E3;
   padding: 8px 16px;
   border: 1px solid #7EC8E3;
@@ -425,7 +398,7 @@ body .container .portfolio .card-1 .click-me button, body .container .portfolio 
   color: #050A30;
 }
 
-body .container .portfolio .card-1 .click-me a, body .container .portfolio .card-2 .click-me a, body .container .portfolio .card-3 .click-me a {
+body .container .portfolio .cards .card-1 .click-me a, body .container .portfolio .cards .card-2 .click-me a, body .container .portfolio .cards .card-3 .click-me a {
   text-decoration: none;
 }
 
@@ -440,7 +413,6 @@ body .container .portfolio .exception .ex {
 body .container .know-me {
   width: 100%;
   background-color: #ffffff;
-  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,14 +420,10 @@ body .container .know-me {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   font-family: poppins;
 }
 
 body .container .know-me .about-me {
-  min-width: 30%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,10 +436,10 @@ body .container .know-me .about-me {
 
 body .container .know-me .about-me h4 {
   height: 300px;
-  background-color: #050A30;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  background-color: #050A30;
   color: #ffffff;
   rotate: 180deg;
   text-align: center;
@@ -480,6 +448,7 @@ body .container .know-me .about-me h4 {
 body .container .know-me .about-me p {
   padding: 10%;
   font-size: medium;
+  color: #050A30;
 }
 
 body .container .know-me .fa {
@@ -591,27 +560,32 @@ body .container .know-me-2 .hobbies h4 {
 }
 
 body .container .footer {
+  width: 100%;
   background-color: #EEEEEE;
+}
+
+body .container .footer .footer-main {
   font-family: poppins;
   color: #050A30;
   padding-bottom: 5%;
-  width: 100%;
 }
 
-body .container .footer h1 {
+body .container .footer .footer-main h1 {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-body .container .footer h1 span {
+body .container .footer .footer-main h1 span {
   color: #7EC8E3;
 }
 
-body .container .footer p {
+body .container .footer .footer-main p {
   text-align: center;
   color: #050A30;
 }
 
-body .container .footer .location-form {
+body .container .footer .footer-main .location-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +597,7 @@ body .container .footer .location-form {
       justify-content: space-around;
 }
 
-body .container .footer .location-form .location {
+body .container .footer .footer-main .location-form .location {
   text-align: left;
   font-weight: lighter;
   display: -webkit-box;
@@ -637,28 +611,28 @@ body .container .footer .location-form .location {
       justify-content: space-around;
 }
 
-body .container .footer .location-form .location p {
+body .container .footer .footer-main .location-form .location p {
   text-align: left;
 }
 
-body .container .footer .location-form .location p a {
+body .container .footer .footer-main .location-form .location p a {
   color: black;
   text-decoration: none;
 }
 
-body .container .footer .location-form .form {
+body .container .footer .footer-main .location-form .form {
   max-width: 60%;
 }
 
-body .container .footer .location-form .form p {
+body .container .footer .footer-main .location-form .form p {
   text-align: left;
 }
 
-body .container .footer .location-form .form .name-email {
+body .container .footer .footer-main .location-form .form .name-email {
   margin-bottom: 5%;
 }
 
-body .container .footer .location-form .form .name-email input {
+body .container .footer .footer-main .location-form .form .name-email input {
   width: 300px;
   height: 50px;
   border-radius: 25px;
@@ -666,16 +640,16 @@ body .container .footer .location-form .form .name-email input {
   margin-right: 25px;
 }
 
-body .container .footer .location-form .form .name-email input input:hover {
+body .container .footer .footer-main .location-form .form .name-email input input:hover {
   border: 2px solid #050A30;
 }
 
-body .container .footer .location-form .form .message textarea {
+body .container .footer .footer-main .location-form .form .message textarea {
   border-radius: 25px;
   border: 1px solid #7EC8E3;
 }
 
-body .container .footer .location-form .form button {
+body .container .footer .footer-main .location-form .form button {
   background-color: #050A30;
   padding: 16px 32px;
   color: #7EC8E3;
@@ -684,13 +658,146 @@ body .container .footer .location-form .form button {
   border: 1px solid #7EC8E3;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
   body .container {
     width: 100%;
   }
   body .container .header {
     width: 100%;
     height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .container .header .image {
+    width: 100%;
+    margin-top: 0;
+  }
+  body .container .header .image .border {
+    width: 100%;
+    height: 300px;
+    background-color: #7EC8E3;
+    border: 5px solid #787A91;
+    -webkit-clip-path: circle(105px at center);
+            clip-path: circle(105px at center);
+  }
+  body .container .header .image .border img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-clip-path: circle(100px at center);
+            clip-path: circle(100px at center);
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+  }
+  body .container .header .hr {
+    display: none;
+  }
+  body .container .header .its-me {
+    text-align: center;
+    padding-top: 0;
+  }
+  body .container .header .its-me h4 {
+    font-size: 1.5rem;
+  }
+  body .container .header .its-me h1 {
+    font-size: 3rem;
+    line-height: 1.5em;
+  }
+  body .container .header .its-me h1 span {
+    color: #7EC8E3;
+  }
+  body .container .header .its-me button {
+    width: 40%;
+    margin-right: 2%;
+  }
+  body .container .header .navbar {
+    margin-top: 3%;
+  }
+  body .container .header .navbar .icon {
+    margin-left: 10%;
+    display: block;
+    opacity: .9;
+  }
+  body .container .header .navbar ul {
+    display: none;
+  }
+  body .container .know-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .know-me .about-me h4 {
+    height: 400px;
+    margin-top: 80px;
+    font-size: 1.3rem;
+  }
+  body .container .know-me .about-me p {
+    font-size: 1.4rem;
+  }
+  body .container .know-me .about-me-2 {
+    margin-top: 0;
+  }
+  body .container .know-me .about-me-2 .part-1 {
+    width: 100%;
+  }
+  body .container .know-me .about-me-2 .part-1 svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25%;
+  }
+  body .container .know-me-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .know-me-2 .hobbies .hobby {
+    width: 120px;
+    height: 130px;
+  }
+  body .container .know-me-2 .hobbies .hobby .fa {
+    font-size: 0.8rem;
+  }
+  body .container .know-me-2 svg {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  body .container {
+    width: 100%;
+  }
+  body .container .header {
+    width: 100%;
+    height: 900px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -755,6 +862,7 @@ body .container .footer .location-form .form button {
     display: none;
   }
   body .container .main {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -765,10 +873,10 @@ body .container .footer .location-form .form button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #ffffff;
   }
   body .container .main .sub-main {
-    margin-top: 12%;
-    max-width: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,79 +887,47 @@ body .container .footer .location-form .form button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: grey;
   }
   body .container .main .sub-main h1 {
     color: #050A30;
-    padding-left: 5%;
     font-family: 'poppins';
-    font-weight: bolder;
-    position: relative;
-    font-size: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
+    border-bottom: 3px solid #050A30;
   }
-  body .container .main .sub-main h1:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 140px;
-    bottom: -9px;
-    left: 120px;
-    border: 3px solid #050A30;
+  body .container .main .sub-main .education {
+    padding: 5%;
+    border: none;
   }
-  body .container .main .sub-main .education-1, body .container .main .sub-main .education-2, body .container .main .sub-main .education-3 {
-    color: #787A91;
-    width: 580px;
-    height: 320px;
-    border-bottom: 1px solid #787A91;
-    padding: 2%;
-    margin: 3%;
-    background-color: #7EC8E3;
-    border-radius: 15% 5%;
+  body .container .main .sub-main .education .education-1, body .container .main .sub-main .education .education-2, body .container .main .sub-main .education .education-3 {
+    padding: 0;
+    color: #050A30;
+    margin: 2% 0;
   }
-  body .container .main .sub-main .education-1 .fa, body .container .main .sub-main .education-2 .fa, body .container .main .sub-main .education-3 .fa {
-    color: #787A91;
+  body .container .main .sub-main .education .education-1 .ins .fa, body .container .main .sub-main .education .education-2 .ins .fa, body .container .main .sub-main .education .education-3 .ins .fa {
+    color: #050A30;
+    font-size: 1.5rem;
+  }
+  body .container .main .sub-main .education .education-1 .ins h2, body .container .main .sub-main .education .education-2 .ins h2, body .container .main .sub-main .education .education-3 .ins h2 {
+    color: #050A30;
     font-size: 2rem;
   }
-  body .container .main .sub-main .education-1 h2, body .container .main .sub-main .education-2 h2, body .container .main .sub-main .education-3 h2 {
-    color: #050A30;
-    font-size: 3rem;
+  body .container .main .sub-main .education .education-1 .ins p, body .container .main .sub-main .education .education-2 .ins p, body .container .main .sub-main .education .education-3 .ins p {
+    font-size: 1.2rem;
   }
-  body .container .main .sub-main .education-1 h4, body .container .main .sub-main .education-2 h4, body .container .main .sub-main .education-3 h4 {
-    font-size: 1.8rem;
-    word-spacing: 3px;
-    font-weight: lighter;
-  }
-  body .container .main .sub-main .education-1 p, body .container .main .sub-main .education-2 p, body .container .main .sub-main .education-3 p {
-    font-size: 1.8rem;
-  }
-  body .container .main .sub-main .education-3 {
+  body .container .main .sub-main .education .education-3 {
     border-bottom: none;
   }
   body .container .main .sub-content {
     width: 100%;
+    background-color: #050A30;
   }
   body .container .main .sub-content h1 {
-    color: #050A30;
-    padding-left: 5%;
+    color: #ffffff;
     font-family: 'poppins';
-    font-weight: bolder;
-    position: relative;
-    font-size: 4rem;
-    text-align: center;
-  }
-  body .container .main .sub-content h1:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 140px;
-    left: 420px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 3px solid #050A30;
+    font-weight: bold;
+    font-size: 3rem;
+    border-bottom: 3px solid #ffffff;
   }
   body .container .main .sub-content .skillset-1 {
     display: -webkit-box;
@@ -861,19 +937,20 @@ body .container .footer .location-form .form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 2%;
   }
   body .container .main .sub-content .skillset-1 .skills-1 h3, body .container .main .sub-content .skillset-1 .skills-2 h3, body .container .main .sub-content .skillset-1 .skills-3 h3, body .container .main .sub-content .skillset-1 .skills-4 h3, body .container .main .sub-content .skillset-1 .skills-5 h3, body .container .main .sub-content .skillset-1 .skills-6 h3 {
-    color: #050A30;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 2px;
   }
   body .container .main .sub-content .skillset-1 .skills-1 h3 i, body .container .main .sub-content .skillset-1 .skills-2 h3 i, body .container .main .sub-content .skillset-1 .skills-3 h3 i, body .container .main .sub-content .skillset-1 .skills-4 h3 i, body .container .main .sub-content .skillset-1 .skills-5 h3 i, body .container .main .sub-content .skillset-1 .skills-6 h3 i {
-    color: #0000FF;
-    font-size: 1.8rem;
+    color: #7EC8E3;
+    font-size: 1.9rem;
     padding: 5px;
   }
   body .container .main .sub-content .skillset-1 .skills-1 ul, body .container .main .sub-content .skillset-1 .skills-2 ul, body .container .main .sub-content .skillset-1 .skills-3 ul, body .container .main .sub-content .skillset-1 .skills-4 ul, body .container .main .sub-content .skillset-1 .skills-5 ul, body .container .main .sub-content .skillset-1 .skills-6 ul {
@@ -883,10 +960,11 @@ body .container .footer .location-form .form button {
     display: block;
     padding: 10px;
     cursor: pointer;
+    color: #ffffff;
   }
-  body .container .main .sub-content .skillset-1 .skills-1 ul li a, body .container .main .sub-content .skillset-1 .skills-2 ul li a, body .container .main .sub-content .skillset-1 .skills-3 ul li a, body .container .main .sub-content .skillset-1 .skills-4 ul li a, body .container .main .sub-content .skillset-1 .skills-5 ul li a, body .container .main .sub-content .skillset-1 .skills-6 ul li a {
-    font-size: 1.5rem;
-    text-decoration: none;
+  body .container .main .sub-content .skillset-1 .skills-1 ul i, body .container .main .sub-content .skillset-1 .skills-2 ul i, body .container .main .sub-content .skillset-1 .skills-3 ul i, body .container .main .sub-content .skillset-1 .skills-4 ul i, body .container .main .sub-content .skillset-1 .skills-5 ul i, body .container .main .sub-content .skillset-1 .skills-6 ul i {
+    color: white;
+    font-size: 1.2rem;
   }
   body .container .main .sub-content .skillset-1 .skills-1 .loader, body .container .main .sub-content .skillset-1 .skills-2 .loader, body .container .main .sub-content .skillset-1 .skills-3 .loader, body .container .main .sub-content .skillset-1 .skills-4 .loader, body .container .main .sub-content .skillset-1 .skills-5 .loader, body .container .main .sub-content .skillset-1 .skills-6 .loader {
     width: 90%;
@@ -935,6 +1013,9 @@ body .container .footer .location-form .form button {
     text-align: right;
   }
   body .container .portfolio {
+    width: 100%;
+  }
+  body .container .portfolio .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -946,15 +1027,11 @@ body .container .footer .location-form .form button {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  body .container .portfolio .card-1, body .container .portfolio .card-2, body .container .portfolio .card-3 {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    max-width: 90%;
-    padding: 5%;
-    margin: 10px 0px;
+  body .container .portfolio .cards .card-1, body .container .portfolio .cards .card-2, body .container .portfolio .cards .card-3 {
+    width: 100%;
+    padding: 0;
     background-color: #050A30;
-    margin-top: 3%;
+    border-bottom: 2px solid #787A91;
   }
   body .container .know-me {
     display: -webkit-box;
@@ -964,9 +1041,6 @@ body .container .footer .location-form .form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
   }
   body .container .know-me .about-me h4 {
@@ -976,10 +1050,26 @@ body .container .footer .location-form .form button {
   body .container .know-me .about-me p {
     font-size: 1.4rem;
   }
-  body .container .know-me .about-me-2 svg {
+  body .container .know-me .about-me-2 {
+    margin-top: 0;
+  }
+  body .container .know-me .about-me-2 .part-1 {
     width: 100%;
   }
+  body .container .know-me .about-me-2 .part-1 svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25%;
+  }
   body .container .know-me-2 {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -991,17 +1081,13 @@ body .container .footer .location-form .form button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .container .know-me-2 h4 {
-    height: 400px;
-    font-size: 1.3rem;
-  }
   body .container .know-me-2 svg {
     display: none;
   }
-  body .container .footer {
+  body .container .footer .footer-main {
     width: 100%;
   }
-  body .container .footer .location-form {
+  body .container .footer .footer-main .location-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1013,7 +1099,7 @@ body .container .footer .location-form .form button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .container .footer .location-form .location {
+  body .container .footer .footer-main .location-form .location {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1024,14 +1110,15 @@ body .container .footer .location-form .form button {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    color: #050A30;
   }
-  body .container .footer .location-form .location a {
+  body .container .footer .footer-main .location-form .location a {
     display: none;
   }
-  body .container .footer .location-form .location p {
+  body .container .footer .footer-main .location-form .location p {
     font-size: 2rem;
   }
-  body .container .footer .location-form .location p i {
+  body .container .footer .footer-main .location-form .location p i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1039,21 +1126,24 @@ body .container .footer .location-form .form button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .container .footer .location-form .form {
+  body .container .footer .footer-main .location-form .form {
     min-width: 90%;
   }
-  body .container .footer .location-form .form p {
+  body .container .footer .footer-main .location-form .form p {
     font-size: 1.5rem;
     padding: 3%;
   }
-  body .container .footer .location-form .form .name-email {
+  body .container .footer .footer-main .location-form .form .name-email {
     padding: 3%;
   }
-  body .container .footer .location-form .form .message {
+  body .container .footer .footer-main .location-form .form .name-email input {
+    margin-top: 10px;
+  }
+  body .container .footer .footer-main .location-form .form .message {
     font-size: 1.7rem;
     padding: 2%;
   }
-  body .container .footer .location-form .form button {
+  body .container .footer .footer-main .location-form .form button {
     margin-left: 3%;
     font-size: 1.3rem;
   }
