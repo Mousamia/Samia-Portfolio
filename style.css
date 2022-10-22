@@ -1,1409 +1,1165 @@
-$dark-blue: #0F044C;
-$grey: #787A91;
-$light-grey: #EEEEEE;
-$blue-2: #050A30;
-$Navyblue-2: #000C66;
-$Blue: #0000FF;
-$Baby-Blue: #7EC8E3;
-$white: #ffffff;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: whitesmoke;
+}
 
+body .container {
+  width: 100%;
+}
 
+body .container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #050A30;
+  width: 100%;
+}
 
-body{
-    
-    margin: 0;
-    padding: 0;
+body .container .header .image {
+  margin-top: 50px;
+}
+
+body .container .header .image .border {
+  width: 300px;
+  height: 300px;
+  background-color: #7EC8E3;
+  -webkit-clip-path: circle(110px at center);
+          clip-path: circle(110px at center);
+}
+
+body .container .header .image .border img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: circle(100px at center);
+          clip-path: circle(100px at center);
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+body .container .header .hr {
+  width: 7px;
+  height: 300px;
+  background-color: #7EC8E3;
+  border-radius: 5px;
+  margin-top: 3%;
+  margin-left: 30px;
+}
+
+body .container .header .its-me {
+  margin-top: 3%;
+  padding: 3% 0;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+body .container .header .its-me h4 {
+  font-family: poppins;
+  font-weight: lighter;
+}
+
+body .container .header .its-me h1 {
+  font-family: poppins;
+  font-weight: bolder;
+}
+
+body .container .header .its-me button {
+  background-color: #7EC8E3;
+  color: #050A30;
+  padding: 15px 30px;
+  font-family: sans-serif;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 1px solid #7EC8E3;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+
+body .container .header .navbar .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .container .header .navbar .icon .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  color: #0F044C;
+  font-size: 18px;
+}
+
+body .container .header .navbar ul {
+  list-style-type: none;
+  margin-top: 50%;
+  padding: 0;
+  border: 3px solid #ffffff;
+  width: 65px;
+  height: 250px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .header .navbar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+body .container .header .navbar ul li i {
+  font-size: 25px;
+  color: #7EC8E3;
+}
+
+body .container .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+}
+
+body .container .main .sub-main {
+  width: 30%;
+}
+
+body .container .main .sub-main h1 {
+  color: #050A30;
+  font-family: poppins;
+  text-align: left;
+  padding-left: 5%;
+  border-bottom: 2px solid #050A30;
+}
+
+body .container .main .sub-main .education {
+  padding: 5%;
+  border-right: 2px solid #787A91;
+}
+
+body .container .main .sub-main .education .education-1, body .container .main .sub-main .education .education-2, body .container .main .sub-main .education .education-3 {
+  color: #050A30;
+  width: 100%;
+  border-bottom: 2px solid #787A91;
+}
+
+body .container .main .sub-main .education .education-1 h2, body .container .main .sub-main .education .education-2 h2, body .container .main .sub-main .education .education-3 h2 {
+  color: #050A30;
+  font-size: 22px;
+}
+
+body .container .main .sub-main .education .education-1 .ins .fa, body .container .main .sub-main .education .education-2 .ins .fa, body .container .main .sub-main .education .education-3 .ins .fa {
+  color: #050A30;
+  font-size: 18px;
+}
+
+body .container .main .sub-main .education .education-3 {
+  border-bottom: none;
+}
+
+body .container .main .sub-content {
+  width: 69%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #050A30;
+}
+
+body .container .main .sub-content h1 {
+  color: #050A30;
+  padding-left: 5%;
+  font-family: 'poppins';
+  border-bottom: 2px solid #050A30;
+}
+
+body .container .main .sub-content .skillset-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2%;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 h3, body .container .main .sub-content .skillset-1 .skills-2 h3, body .container .main .sub-content .skillset-1 .skills-3 h3, body .container .main .sub-content .skillset-1 .skills-4 h3, body .container .main .sub-content .skillset-1 .skills-5 h3, body .container .main .sub-content .skillset-1 .skills-6 h3 {
+  color: #050A30;
+  font-weight: lighter;
+  padding-bottom: 2px;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 h3 i, body .container .main .sub-content .skillset-1 .skills-2 h3 i, body .container .main .sub-content .skillset-1 .skills-3 h3 i, body .container .main .sub-content .skillset-1 .skills-4 h3 i, body .container .main .sub-content .skillset-1 .skills-5 h3 i, body .container .main .sub-content .skillset-1 .skills-6 h3 i {
+  color: #7EC8E3;
+  font-size: 20px;
+  padding: 5px;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 ul, body .container .main .sub-content .skillset-1 .skills-2 ul, body .container .main .sub-content .skillset-1 .skills-3 ul, body .container .main .sub-content .skillset-1 .skills-4 ul, body .container .main .sub-content .skillset-1 .skills-5 ul, body .container .main .sub-content .skillset-1 .skills-6 ul {
+  list-style-type: none;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 ul li, body .container .main .sub-content .skillset-1 .skills-2 ul li, body .container .main .sub-content .skillset-1 .skills-3 ul li, body .container .main .sub-content .skillset-1 .skills-4 ul li, body .container .main .sub-content .skillset-1 .skills-5 ul li, body .container .main .sub-content .skillset-1 .skills-6 ul li {
+  display: block;
+  padding: 10px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 ul li a, body .container .main .sub-content .skillset-1 .skills-2 ul li a, body .container .main .sub-content .skillset-1 .skills-3 ul li a, body .container .main .sub-content .skillset-1 .skills-4 ul li a, body .container .main .sub-content .skillset-1 .skills-5 ul li a, body .container .main .sub-content .skillset-1 .skills-6 ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader, body .container .main .sub-content .skillset-1 .skills-2 .loader, body .container .main .sub-content .skillset-1 .skills-3 .loader, body .container .main .sub-content .skillset-1 .skills-4 .loader, body .container .main .sub-content .skillset-1 .skills-5 .loader, body .container .main .sub-content .skillset-1 .skills-6 .loader {
+  width: 90%;
+  background-color: #EEEEEE;
+  border-radius: 15px;
+  color: white;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader .html, body .container .main .sub-content .skillset-1 .skills-2 .loader .html, body .container .main .sub-content .skillset-1 .skills-3 .loader .html, body .container .main .sub-content .skillset-1 .skills-4 .loader .html, body .container .main .sub-content .skillset-1 .skills-5 .loader .html, body .container .main .sub-content .skillset-1 .skills-6 .loader .html {
+  width: 90%;
+  background-color: #050A30;
+  padding: 2px;
+  border-radius: 15px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader .css, body .container .main .sub-content .skillset-1 .skills-2 .loader .css, body .container .main .sub-content .skillset-1 .skills-3 .loader .css, body .container .main .sub-content .skillset-1 .skills-4 .loader .css, body .container .main .sub-content .skillset-1 .skills-5 .loader .css, body .container .main .sub-content .skillset-1 .skills-6 .loader .css {
+  width: 60%;
+  background-color: #050A30;
+  padding: 3px;
+  border-radius: 15px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader .js, body .container .main .sub-content .skillset-1 .skills-2 .loader .js, body .container .main .sub-content .skillset-1 .skills-3 .loader .js, body .container .main .sub-content .skillset-1 .skills-4 .loader .js, body .container .main .sub-content .skillset-1 .skills-5 .loader .js, body .container .main .sub-content .skillset-1 .skills-6 .loader .js {
+  width: 50%;
+  background-color: #050A30;
+  padding: 3px;
+  border-radius: 15px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-2 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-3 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-4 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-5 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-6 .loader .illustration {
+  width: 40%;
+  background-color: #050A30;
+  padding: 3px;
+  border-radius: 15px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body .container .main .sub-content .skillset-1 .skills-1 .loader .react, body .container .main .sub-content .skillset-1 .skills-2 .loader .react, body .container .main .sub-content .skillset-1 .skills-3 .loader .react, body .container .main .sub-content .skillset-1 .skills-4 .loader .react, body .container .main .sub-content .skillset-1 .skills-5 .loader .react, body .container .main .sub-content .skillset-1 .skills-6 .loader .react {
+  width: 30%;
+  background-color: #050A30;
+  padding: 3px;
+  border-radius: 15px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body .container .portfolio {
+  width: 100%;
+  background-color: #050A30;
+}
+
+body .container .portfolio .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .portfolio .cards .card-1, body .container .portfolio .cards .card-2, body .container .portfolio .cards .card-3 {
+  border: 1px solid #787A91;
+  width: 25%;
+  padding: 3%;
+}
+
+body .container .portfolio .cards .card-1 .transition, body .container .portfolio .cards .card-2 .transition, body .container .portfolio .cards .card-3 .transition {
+  position: relative;
+}
+
+body .container .portfolio .cards .card-1 .transition img, body .container .portfolio .cards .card-2 .transition img, body .container .portfolio .cards .card-3 .transition img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30%;
+     object-position: 30%;
+}
+
+body .container .portfolio .cards .card-1 .transition .top, body .container .portfolio .cards .card-2 .transition .top, body .container .portfolio .cards .card-3 .transition .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  font-family: poppins;
+}
+
+body .container .portfolio .cards .card-1 .transition .layer, body .container .portfolio .cards .card-2 .transition .layer, body .container .portfolio .cards .card-3 .transition .layer {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #7EC8E3;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+body .container .portfolio .cards .card-1 .transition .layer:hover, body .container .portfolio .cards .card-2 .transition .layer:hover, body .container .portfolio .cards .card-3 .transition .layer:hover {
+  opacity: .9;
+  color: #050A30;
+}
+
+body .container .portfolio .cards .card-1 .click-me, body .container .portfolio .cards .card-2 .click-me, body .container .portfolio .cards .card-3 .click-me {
+  padding: 20px;
+  font-family: poppins;
+  word-spacing: 5px;
+}
+
+body .container .portfolio .cards .card-1 .click-me strong, body .container .portfolio .cards .card-2 .click-me strong, body .container .portfolio .cards .card-3 .click-me strong {
+  color: #EEEEEE;
+}
+
+body .container .portfolio .cards .card-1 .click-me button, body .container .portfolio .cards .card-2 .click-me button, body .container .portfolio .cards .card-3 .click-me button {
+  background-color: #7EC8E3;
+  padding: 8px 16px;
+  border: 1px solid #7EC8E3;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #050A30;
+}
+
+body .container .portfolio .cards .card-1 .click-me a, body .container .portfolio .cards .card-2 .click-me a, body .container .portfolio .cards .card-3 .click-me a {
+  text-decoration: none;
+}
+
+body .container .portfolio .exception h2 {
+  padding-bottom: 30px;
+}
+
+body .container .portfolio .exception .ex {
+  padding-top: 30px;
+}
+
+body .container .know-me {
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: poppins;
+}
+
+body .container .know-me .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5%;
+}
+
+body .container .know-me .about-me h4 {
+  height: 300px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  background-color: #050A30;
+  color: #ffffff;
+  rotate: 180deg;
+  text-align: center;
+}
+
+body .container .know-me .about-me p {
+  padding: 10%;
+  font-size: medium;
+  color: #050A30;
+}
+
+body .container .know-me .fa {
+  color: grey;
+}
+
+body .container .know-me .right {
+  rotate: 180deg;
+}
+
+body .container .know-me .about-me-2 {
+  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+body .container .know-me-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: #050A30;
+  font-family: poppins;
+}
+
+body .container .know-me-2 svg {
+  margin-top: 20%;
+}
+
+body .container .know-me-2 .hobbies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5%;
+  min-width: 50%;
+}
+
+body .container .know-me-2 .hobbies .hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #787A91;
+  border-radius: 25% 5%;
+  margin-top: 12%;
+}
+
+body .container .know-me-2 .hobbies .hobby .tom {
+  padding-top: 35px;
+}
+
+body .container .know-me-2 .hobbies .hobby .tom i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  opacity: 1;
+}
+
+body .container .know-me-2 .hobbies .hobby .tom p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body .container .know-me-2 .hobbies h4 {
+  height: 300px;
+  background-color: #ffffff;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #050A30;
+  text-align: center;
+}
+
+body .container .footer {
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+body .container .footer .footer-main {
+  font-family: poppins;
+  color: #050A30;
+  padding-bottom: 5%;
+}
+
+body .container .footer .footer-main h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body .container .footer .footer-main h1 span {
+  color: #7EC8E3;
+}
+
+body .container .footer .footer-main p {
+  text-align: center;
+  color: #050A30;
+}
+
+body .container .footer .footer-main .location-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .footer .footer-main .location-form .location {
+  text-align: left;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .container .footer .footer-main .location-form .location p {
+  text-align: left;
+}
+
+body .container .footer .footer-main .location-form .location p a {
+  color: black;
+  text-decoration: none;
+}
+
+body .container .footer .footer-main .location-form .form {
+  max-width: 60%;
+}
+
+body .container .footer .footer-main .location-form .form p {
+  text-align: left;
+}
+
+body .container .footer .footer-main .location-form .form .name-email {
+  margin-bottom: 5%;
+}
+
+body .container .footer .footer-main .location-form .form .name-email input {
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #7EC8E3;
+  margin-right: 25px;
+}
+
+body .container .footer .footer-main .location-form .form .name-email input input:hover {
+  border: 2px solid #050A30;
+}
+
+body .container .footer .footer-main .location-form .form .message textarea {
+  border-radius: 25px;
+  border: 1px solid #7EC8E3;
+}
+
+body .container .footer .footer-main .location-form .form button {
+  background-color: #050A30;
+  padding: 16px 32px;
+  color: #7EC8E3;
+  border-radius: 25px;
+  margin-top: 3%;
+  border: 1px solid #7EC8E3;
+}
+
+@media (max-width: 600px) {
+  body .container {
     width: 100%;
-    color: whitesmoke;
-    //font-family: 'Poppins', sans-serif;
-    //font-family: 'Proza Libre', sans-serif;
-
-    
-.container{
-
+  }
+  body .container .header {
     width: 100%;
-  
-    .header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: $blue-2;
-        width: 100%;
-        
-        
-
-        
-       .image{
-
-        margin-top: 50px;
-        
-
-        .border{
-            width: 300px;
-            height: 300px;
-            background-color: $Baby-Blue;
-            clip-path: circle(110px at center);
-
-            
-            img{
-                width: 300px;
-                height: 300px;
-                object-fit: cover;  
-                clip-path: circle(100px at center);
-                filter: grayscale(40%);
-                
-            
-            }
-        }
-        
-        
-
-       }
-    
-        .hr{
-            width: 7px;
-            height: 300px;
-            background-color: $Baby-Blue;
-            border-radius: 5px;
-            margin-top: 3%;
-            margin-left: 30px;         
-       
-        }
-    
-       
-        .its-me{
-            margin-top: 3%;
-            padding: 3% 0;
-            line-height: 1.8rem;
-            text-align: left;
-            
-    
-            h4{
-                font-family: poppins;
-                font-weight: lighter;
-            }
-    
-            h1{
-                font-family: poppins;
-                font-weight: bolder;
-            }
-    
-            
-    
-            button{
-
-                    background-color: $Baby-Blue;
-                    color: #050A30;
-                    padding: 15px 30px;
-                    font-family: sans-serif;
-                    font-size: 15px;
-                    border-radius: 50px;
-                    border: 1px solid $Baby-Blue;
-                    margin: 10px 0 ;
-                    font-weight: bolder;
-          
-            }
-    
-            
-           
-    
-        }
-    
-     
-        .navbar{
-            
-         
-            .icon{
-                    
-                    width: 20px;
-                    height: 20px;
-                    background-color: $white;
-                    padding: 20px;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    
-                   
-    
-    
-                .fa{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0;
-                    color: $dark-blue;
-                    font-size: 18px;
-    
-                    //Centering any element
-                    // top: 50%;
-                    // left: 50%;
-                    // transform: translate(-50%, -50%);
-    
-                    
-                    
-                }
-            }
-    
-               
-            ul{
-              
-                list-style-type: none;
-                margin-top: 50%;
-                padding: 0;
-                border: 3px solid $white;
-                width: 65px;
-                height: 250px;
-                border-radius: 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                
-
-                
-    
-                li{
-                    // padding: 10px 25px; //centering without flex
-                    display: flex;
-                    justify-content: center;
-                    padding: 10px 0;
-
-                   
-                   i{
-                    font-size:25px;
-                    color: $Baby-Blue;
-                   }
-
-                   
-
-                   
-                }
-
-                
-    
-            }
-          
-    
-            
-            
-        }
-    
-    
-    }
-    
-    .main{
-   
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: $white;
-
-
-        .sub-main{
-            
-            width: 30%;
-
-            h1{
-                color: $blue-2;
-                font-family: poppins;
-                text-align: left;
-                padding-left: 5%;
-                border-bottom: 2px solid $blue-2;
-            }
-
-            .education{
-                padding: 5%;
-                border-right: 2px solid $grey;
-                .education-1, .education-2, .education-3{
-
-                
-                    color: $blue-2;
-                    width: 100%;
-                    border-bottom: 2px solid $grey;
-                   
-    
-    
-                    
-                    h2{
-                        color: $blue-2;
-                        font-size: 22px;
-                    }
-    
-                    .ins{
-                        .fa{
-                            color: $blue-2;
-                            font-size: 18px;
-                        }
-        
-                        
-                    }
-    
-    
-                    
-                } 
-                
-                .education-3{
-                    border-bottom: none;
-                }
-            }
-            
-            
-        }
-
-        .sub-content{
-
-             width:69%;
-             background-color: $white;
-             display: flex;
-             flex-direction: column;
-             justify-content: space-around;
-             color: $blue-2;
-
-             h1{
-                color: $blue-2;
-                padding-left: 5%;
-                font-family: 'poppins';
-                border-bottom: 2px solid $blue-2;
-
-           
-            }
-    
- 
-             .skillset-1{
-                 
-                 display: flex;
-                 flex-direction: column;
-                 justify-content: space-evenly;
-                 padding: 2%;
-            
- 
-                 .skills-1, .skills-2, .skills-3, .skills-4, .skills-5, .skills-6 {
- 
-                     h3{
-                         color: $blue-2;
-                         font-weight: lighter;
-                         padding-bottom: 2px;
-                         
-                         i{
-                             color: $Baby-Blue;
-                             font-size: 20px;
-                             padding: 5px;
-                         }
- 
-                         
-         
-                         
-                     }
- 
-                     
-                         ul{
-                           
-                             list-style-type: none;
-                             column-count: 2;
-                             li{
-                                 display: block;
-                                 padding: 10px;
-                                 font-size: medium;
-                                 cursor: pointer;
-                                 a{
-                                    font-size: 1.5rem;
-                                    text-decoration: none;
-                                }
-                             }
-                         }
-                     
- 
-                     
-                 .loader{
-                     width:90%;
-                     background-color: $light-grey;
-                     border-radius: 15px;
-                     color: white;
- 
-                     .html{
-                         width: 90%;
-                         background-color: $blue-2;
-                         padding: 2px;
-                         border-radius: 15px;
-                         opacity: 0.9;
-                         text-align: right;
- 
-                     }
- 
-                     .css{
-                         width: 60%;
-                         background-color: $blue-2;
-                         padding: 3px;
-                         border-radius: 15px;
-                         opacity: 0.9;
-                         text-align: right;
-                     }
- 
-                     .js{
-                         width: 50%;
-                         background-color: $blue-2;
-                         padding: 3px;
-                         border-radius: 15px;
-                         opacity: 0.9;
-                         text-align: right;
-                     }
- 
-                     .illustration{
-                         width: 40%;
-                         background-color: $blue-2;
-                         padding: 3px;
-                         border-radius: 15px;
-                         opacity: 0.9;
-                         text-align: right;
-                         
-                     }
- 
-                     .react{
-                         width: 30%;
-                         background-color: $blue-2;
-                         padding: 3px;
-                         border-radius: 15px;
-                         opacity: 0.9;
-                         text-align: right;
- 
-                     }
- 
-                 }
-                     
-                    
-                 }
- 
- 
-                 
-             }
- 
-         }
-       
-    }
-
-    
-    
-    
-    .portfolio{
-        width: 100%;
-        background-color: $blue-2;
-        
-       
-        .cards{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            .card-1, .card-2, .card-3{
-                border: 1px solid $grey;
-                width: 25%;
-                padding: 3%;
-                
-                
-    
-        
-                .transition{
-    
-                    position: relative;
-                 
-    
-                    img{
-                        
-                        width:100%;
-                        height: 200px;
-                        object-fit: cover;
-                        object-position: (30%);
-                    }
-    
-                    .top{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-weight: bolder;
-                        font-family: poppins;
-                    }
-    
-                    .layer{
-                        position: absolute;
-                        width:100%;
-                        height: 200px;
-                        background-color:  $Baby-Blue;
-                        transition: opacity 1s ;
-                        opacity: 0;
-                        
-                    }
-    
-                    .layer:hover{
-                        opacity: .9;
-                        color: $blue-2;
-                        
-                        
-                    }
-    
-                 
-                    
-                }
-    
-                .click-me{
-                    padding: 20px;
-                    font-family: poppins;
-                    word-spacing: 5px;
-                    
-    
-                    strong{
-                        color: $light-grey;
-                    }
-    
-                    
-    
-                    button{
-                        background-color: $Baby-Blue;
-                        padding: 8px 16px;
-                        border: 1px solid $Baby-Blue;
-                        border-radius: 25px;
-                        font-weight: bold;
-                        color: $blue-2;
-                        
-                    }
-                    a{
-                        text-decoration: none;
-                    }
-    
-                    
-    
-    
-                    
-        
-                }
-                
-                
-            }
-        }
-
-
-        .exception{
-                    
-            h2{
-                padding-bottom: 30px;
-            }
-
-            .ex{
-             padding-top: 30px;
-             
-            }
-         }
-
-        
-    }
-
-    
-    .know-me{
-        
-        width: 100%;
-       background-color: $white;
-        display: flex;
-        flex-direction: row;
-        font-family: poppins;
-       
-        .about-me{
-           
-            
-            display: flex;
-            flex-direction: row;
-            padding: 5%;
-            
-
-            h4{
-               height:300px;
-                writing-mode: vertical-rl;
-                background-color:$blue-2;
-                color: $white;
-                rotate: 180deg;
-                text-align: center;
-            }
-
-            p{
-                padding: 10%;
-                font-size: medium;
-                color:$blue-2;
-                
-            }
-        }
-
-        .fa{
-            color:grey;
-        }
-
-        .right{
-            // position: absolute;
-            // right:35%;
-            rotate: 180deg;
-        }
-
-        .about-me-2{
-           min-width: 40%;
-            display: flex;
-            flex-direction: column;
+    height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
             justify-content: space-between;
-           // border: 2px solid lime;
-            margin-top: 2%;
+  }
+  body .container .header .image {
+    width: 100%;
+    margin-top: 0;
+  }
+  body .container .header .image .border {
+    width: 100%;
+    height: 300px;
+    background-color: #7EC8E3;
+    border: 5px solid #787A91;
+    -webkit-clip-path: circle(105px at center);
+            clip-path: circle(105px at center);
+  }
+  body .container .header .image .border img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-clip-path: circle(100px at center);
+            clip-path: circle(100px at center);
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+  }
+  body .container .header .hr {
+    display: none;
+  }
+  body .container .header .its-me {
+    text-align: center;
+    padding-top: 0;
+  }
+  body .container .header .its-me h4 {
+    font-size: 1.5rem;
+  }
+  body .container .header .its-me h1 {
+    font-size: 3rem;
+    line-height: 1.5em;
+  }
+  body .container .header .its-me h1 span {
+    color: #7EC8E3;
+  }
+  body .container .header .its-me button {
+    width: 40%;
+    margin-right: 2%;
+  }
+  body .container .header .navbar {
+    margin-top: 3%;
+  }
+  body .container .header .navbar .icon {
+    margin-left: 10%;
+    display: block;
+    opacity: .9;
+  }
+  body .container .header .navbar ul {
+    display: none;
+  }
+  body .container .know-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .know-me .about-me h4 {
+    height: 400px;
+    margin-top: 80px;
+    font-size: 1.3rem;
+  }
+  body .container .know-me .about-me p {
+    font-size: 1.4rem;
+  }
+  body .container .know-me .about-me-2 {
+    margin-top: 0;
+  }
+  body .container .know-me .about-me-2 .part-1 {
+    width: 100%;
+  }
+  body .container .know-me .about-me-2 .part-1 svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25%;
+  }
+  body .container .know-me-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .know-me-2 .hobbies .hobby {
+    width: 120px;
+    height: 130px;
+  }
+  body .container .know-me-2 .hobbies .hobby .fa {
+    font-size: 0.8rem;
+  }
+  body .container .know-me-2 svg {
+    display: none;
+  }
+}
 
-            
-
-            
-        }
-      
-    
-    }
-
-
-    .know-me-2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        background-color: $blue-2;
-        font-family: poppins;
-        
-
-        svg{
-            margin-top: 20%;
-           
-            
-        }
-
-        .hobbies{
-
-            display: flex;
+@media (max-width: 992px) {
+  body .container {
+    width: 100%;
+  }
+  body .container .header {
+    width: 100%;
+    height: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .container .header .image {
+    width: 100%;
+    margin-top: 0;
+  }
+  body .container .header .image .border {
+    width: 100%;
+    height: 300px;
+    background-color: #7EC8E3;
+    border: 5px solid #787A91;
+    -webkit-clip-path: circle(105px at center);
+            clip-path: circle(105px at center);
+  }
+  body .container .header .image .border img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-clip-path: circle(100px at center);
+            clip-path: circle(100px at center);
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+  }
+  body .container .header .hr {
+    display: none;
+  }
+  body .container .header .its-me {
+    text-align: center;
+    padding-top: 0;
+  }
+  body .container .header .its-me h4 {
+    font-size: 1.5rem;
+  }
+  body .container .header .its-me h1 {
+    font-size: 3rem;
+    line-height: 1.5em;
+  }
+  body .container .header .its-me h1 span {
+    color: #7EC8E3;
+  }
+  body .container .header .its-me button {
+    width: 40%;
+    margin-right: 2%;
+  }
+  body .container .header .navbar .icon {
+    margin-top: 10%;
+    margin-left: 10%;
+    display: block;
+    opacity: .9;
+  }
+  body .container .header .navbar ul {
+    display: none;
+  }
+  body .container .main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #ffffff;
+  }
+  body .container .main .sub-main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .main .sub-main h1 {
+    color: #050A30;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 3rem;
+    border-bottom: 3px solid #050A30;
+  }
+  body .container .main .sub-main .education {
+    padding: 5%;
+    border: none;
+  }
+  body .container .main .sub-main .education .education-1, body .container .main .sub-main .education .education-2, body .container .main .sub-main .education .education-3 {
+    padding: 0;
+    color: #050A30;
+    margin: 2% 0;
+  }
+  body .container .main .sub-main .education .education-1 .ins .fa, body .container .main .sub-main .education .education-2 .ins .fa, body .container .main .sub-main .education .education-3 .ins .fa {
+    color: #050A30;
+    font-size: 1.5rem;
+  }
+  body .container .main .sub-main .education .education-1 .ins h2, body .container .main .sub-main .education .education-2 .ins h2, body .container .main .sub-main .education .education-3 .ins h2 {
+    color: #050A30;
+    font-size: 2rem;
+  }
+  body .container .main .sub-main .education .education-1 .ins p, body .container .main .sub-main .education .education-2 .ins p, body .container .main .sub-main .education .education-3 .ins p {
+    font-size: 1.2rem;
+  }
+  body .container .main .sub-main .education .education-3 {
+    border-bottom: none;
+  }
+  body .container .main .sub-content {
+    width: 100%;
+    background-color: #050A30;
+  }
+  body .container .main .sub-content h1 {
+    color: #ffffff;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 3rem;
+    border-bottom: 3px solid #ffffff;
+  }
+  body .container .main .sub-content .skillset-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2%;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 h3, body .container .main .sub-content .skillset-1 .skills-2 h3, body .container .main .sub-content .skillset-1 .skills-3 h3, body .container .main .sub-content .skillset-1 .skills-4 h3, body .container .main .sub-content .skillset-1 .skills-5 h3, body .container .main .sub-content .skillset-1 .skills-6 h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 h3 i, body .container .main .sub-content .skillset-1 .skills-2 h3 i, body .container .main .sub-content .skillset-1 .skills-3 h3 i, body .container .main .sub-content .skillset-1 .skills-4 h3 i, body .container .main .sub-content .skillset-1 .skills-5 h3 i, body .container .main .sub-content .skillset-1 .skills-6 h3 i {
+    color: #7EC8E3;
+    font-size: 1.9rem;
+    padding: 5px;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 ul, body .container .main .sub-content .skillset-1 .skills-2 ul, body .container .main .sub-content .skillset-1 .skills-3 ul, body .container .main .sub-content .skillset-1 .skills-4 ul, body .container .main .sub-content .skillset-1 .skills-5 ul, body .container .main .sub-content .skillset-1 .skills-6 ul {
+    list-style-type: none;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 ul li, body .container .main .sub-content .skillset-1 .skills-2 ul li, body .container .main .sub-content .skillset-1 .skills-3 ul li, body .container .main .sub-content .skillset-1 .skills-4 ul li, body .container .main .sub-content .skillset-1 .skills-5 ul li, body .container .main .sub-content .skillset-1 .skills-6 ul li {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 ul i, body .container .main .sub-content .skillset-1 .skills-2 ul i, body .container .main .sub-content .skillset-1 .skills-3 ul i, body .container .main .sub-content .skillset-1 .skills-4 ul i, body .container .main .sub-content .skillset-1 .skills-5 ul i, body .container .main .sub-content .skillset-1 .skills-6 ul i {
+    color: white;
+    font-size: 1.2rem;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader, body .container .main .sub-content .skillset-1 .skills-2 .loader, body .container .main .sub-content .skillset-1 .skills-3 .loader, body .container .main .sub-content .skillset-1 .skills-4 .loader, body .container .main .sub-content .skillset-1 .skills-5 .loader, body .container .main .sub-content .skillset-1 .skills-6 .loader {
+    width: 90%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    color: white;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader .html, body .container .main .sub-content .skillset-1 .skills-2 .loader .html, body .container .main .sub-content .skillset-1 .skills-3 .loader .html, body .container .main .sub-content .skillset-1 .skills-4 .loader .html, body .container .main .sub-content .skillset-1 .skills-5 .loader .html, body .container .main .sub-content .skillset-1 .skills-6 .loader .html {
+    width: 90%;
+    background-color: #050A30;
+    padding: 2px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: right;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader .css, body .container .main .sub-content .skillset-1 .skills-2 .loader .css, body .container .main .sub-content .skillset-1 .skills-3 .loader .css, body .container .main .sub-content .skillset-1 .skills-4 .loader .css, body .container .main .sub-content .skillset-1 .skills-5 .loader .css, body .container .main .sub-content .skillset-1 .skills-6 .loader .css {
+    width: 60%;
+    background-color: #050A30;
+    padding: 3px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: right;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader .js, body .container .main .sub-content .skillset-1 .skills-2 .loader .js, body .container .main .sub-content .skillset-1 .skills-3 .loader .js, body .container .main .sub-content .skillset-1 .skills-4 .loader .js, body .container .main .sub-content .skillset-1 .skills-5 .loader .js, body .container .main .sub-content .skillset-1 .skills-6 .loader .js {
+    width: 50%;
+    background-color: #050A30;
+    padding: 3px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: right;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-2 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-3 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-4 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-5 .loader .illustration, body .container .main .sub-content .skillset-1 .skills-6 .loader .illustration {
+    width: 40%;
+    background-color: #050A30;
+    padding: 3px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: right;
+  }
+  body .container .main .sub-content .skillset-1 .skills-1 .loader .react, body .container .main .sub-content .skillset-1 .skills-2 .loader .react, body .container .main .sub-content .skillset-1 .skills-3 .loader .react, body .container .main .sub-content .skillset-1 .skills-4 .loader .react, body .container .main .sub-content .skillset-1 .skills-5 .loader .react, body .container .main .sub-content .skillset-1 .skills-6 .loader .react {
+    width: 30%;
+    background-color: #050A30;
+    padding: 3px;
+    border-radius: 15px;
+    opacity: 0.9;
+    text-align: right;
+  }
+  body .container .portfolio {
+    width: 100%;
+  }
+  body .container .portfolio .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .container .portfolio .cards .card-1, body .container .portfolio .cards .card-2, body .container .portfolio .cards .card-3 {
+    width: 100%;
+    padding: 0;
+    background-color: #050A30;
+    border-bottom: 2px solid #787A91;
+  }
+  body .container .know-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body .container .know-me .about-me h4 {
+    height: 400px;
+    font-size: 1.3rem;
+  }
+  body .container .know-me .about-me p {
+    font-size: 1.4rem;
+  }
+  body .container .know-me .about-me-2 {
+    margin-top: 0;
+  }
+  body .container .know-me .about-me-2 .part-1 {
+    width: 100%;
+  }
+  body .container .know-me .about-me-2 .part-1 svg {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25%;
+  }
+  body .container .know-me-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .know-me-2 svg {
+    display: none;
+  }
+  body .container .footer .footer-main {
+    width: 100%;
+  }
+  body .container .footer .footer-main .location-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .footer .footer-main .location-form .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
             flex-direction: row;
-            justify-content: space-around;
-            padding: 5%;
-            min-width: 50%;
-
-           
-            .hobby{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 150px;
-                height: 150px;
-                background-color: $grey;
-                border-radius: 25% 5%;
-                margin-top: 12%;
-                
-               
-           
-    
-                .tom{
-    
-                   padding-top: 35px;
-                   
-                    
-                    i{
-                        display: flex;
-                        justify-content: center; 
-                        text-align: center; 
-                        opacity: 1;
-                        
-                    
-                    }
-    
-                    p{
-                        display: flex;
-                        justify-content: center; 
-                        text-align: center; 
-                    }
-    
-                    
-                }
-    
-                
-            }
-    
-                h4{
-                    height:300px;
-                    background-color:$white;
-                    writing-mode: vertical-rl;
-                    color: $blue-2;
-                    text-align: center;
-                }
-        }
-        
-    }
-
-    
- 
-    
-    .footer{
-        width: 100%;
-        background-color: $light-grey;
-        
-        .footer-main{
-            
-            font-family: poppins;
-            color: $blue-2;
-            padding-bottom: 5%;
-            
-    
-    
-            h1{
-                text-align: center;
-                margin: 0;
-                padding: 0;
-    
-                span{
-                    color: $Baby-Blue;
-                }
-    
-            }
-    
-            p{
-                text-align: center;
-                color: $blue-2;  
-    
-            }
-    
-            .location-form{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-               
-    
-                .location{
-                    text-align: left;
-                    font-weight: lighter;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    p{
-                        text-align: left;
-                        a{
-                            color: black;
-                            text-decoration: none;
-                        }
-                    }
-    
-    
-                    
-                }
-    
-                .form{
-                    max-width: 60%;
-    
-                    
-    
-                    p{
-                        text-align: left;
-                    }
-                    
-                    .name-email{
-                        margin-bottom: 5%;
-    
-                       input{
-                        width: 300px;
-                        height: 50px;
-                        border-radius: 25px;
-                        border: 2px solid $Baby-Blue;
-                        margin-right: 25px;
-    
-    
-                        input:hover{
-                            
-                                border: 2px solid $blue-2;
-                               
-                        }
-                        
-                       }
-    
-    
-                    }
-    
-                    
-    
-                    .message{
-                        textarea{
-                            border-radius: 25px;
-                            border: 1px solid $Baby-Blue;
-                            
-                        }
-                        
-                    }
-    
-                    button{
-                        background-color: $blue-2;
-                        padding: 16px 32px;
-                        color: $Baby-Blue;
-                        border-radius: 25px;
-                        margin-top: 3%;
-                        border: 1px solid $Baby-Blue;
-    
-                    }
-                    
-                    
-                }
-                
-            }
-            
-        }
-    }
-    
-
-}
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    color: #050A30;
+  }
+  body .container .footer .footer-main .location-form .location a {
+    display: none;
+  }
+  body .container .footer .footer-main .location-form .location p {
+    font-size: 2rem;
+  }
+  body .container .footer .footer-main .location-form .location p i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .footer .footer-main .location-form .form {
+    min-width: 90%;
+  }
+  body .container .footer .footer-main .location-form .form p {
+    font-size: 1.5rem;
+    padding: 3%;
+  }
+  body .container .footer .footer-main .location-form .form .name-email {
+    padding: 3%;
+  }
+  body .container .footer .footer-main .location-form .form .name-email input {
+    margin-top: 10px;
+    width: 60%;
+  }
+  body .container .footer .footer-main .location-form .form .message {
+    font-size: 1.7rem;
+    padding: 2%;
+  }
+  body .container .footer .footer-main .location-form .form .message textarea {
+    width: 60%;
+  }
+  body .container .footer .footer-main .location-form .form button {
+    margin-left: 3%;
+    font-size: 1.3rem;
+  }
 }
 
-
-
-
-//Breakeven points
-@media (max-width:600px){
-    body{
-    
-        .container{
-            width: 100%;
-    
-            .header{
-    
-                width: 100%;
-                height: 800px;
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: space-between;
-    
-                .image{
-                    width: 100%;
-                    margin-top: 0;
-                                    
-                        .border{
-                            width: 100%;
-                            height: 300px;
-                            background-color: $Baby-Blue;
-                            border: 5px solid $grey;
-                            clip-path: circle(105px at center);
-
-                            
-                            img{
-                                width: 100%;
-                                height: 300px;
-                                object-fit: contain;  
-                                clip-path: circle(100px at center);
-                                filter: grayscale(40%);
-                                
-                            
-                            }
-                        }
-        
-                    
-                    
-                }
-    
-           
-                .hr{
-                    display: none;
-                }
-        
-                .its-me{
-                    text-align: center;
-                    padding-top: 0;
-        
-              
-                    h4{
-                        font-size: 1.5rem;
-                    }
-        
-                    h1{
-                        font-size: 3rem;
-                        line-height: 1.5em;
-                        span{
-                            color: $Baby-Blue;
-                        }
-                    }
-    
-                    button{
-                        width:40%;
-                        margin-right: 2%;
-
-                    }
-                
-         
-                }
-        
-                
-                .navbar{
-                    margin-top: 3%;
-                    .icon{
-                        
-                        margin-left: 10%;
-                        display: block;
-                        opacity: .9;
-                        
-                    }
-
-                    ul{
-                        display: none;
-                    }
-        
-                    
-                }
-                
-                
-                
-            }
-    
-           
-            
-    
-           
-            .know-me{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-    
-                .about-me{
-                    
-                    h4{
-                        
-                        height: 400px;
-                        margin-top: 80px;
-                        font-size: 1.3rem;
-                    }
-    
-                    p{
-                        font-size: 1.4rem;
-                    }
-                }
-    
-                .about-me-2{
-                    margin-top: 0;
-                    
-                    .part-1{
-                        width: 100%;
-                        svg{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding-left: 25%;
-                        }
-
-                    }
-                   
-                }
-    
-    
-                
-            }
-    
-            .know-me-2{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                .hobbies{
-                    .hobby{
-                        width: 120px;
-                        height: 130px;
-                        .fa{
-                            font-size: 0.8rem;
-                        }
-
-                    }
-                }
-                
-                svg{
-                    
-                    display: none;
-                }
-    
-            }
-    
-           
-    
-        }
-    
-    
-    }
-   
-      
-
-   
+@media (min-width: 1025px) {
+  body .container .header .navbar .icon {
+    display: none;
+  }
+  body .container .header .navbar .round-menu {
+    display: block;
+  }
 }
-
-@media (max-width:768px){
-   
-   
-   
- 
-}
-
-@media (max-width:992px){
-    body{
-    
-        .container{
-            width: 100%;
-    
-            .header{
-    
-                width: 100%;
-                height: 900px;
-                display: flex;
-                flex-direction: column-reverse;
-                justify-content: space-between;
-    
-                .image{
-                    width: 100%;
-                    margin-top: 0;
-                                    
-                        .border{
-                            width: 100%;
-                            height: 300px;
-                            background-color: $Baby-Blue;
-                            border: 5px solid $grey;
-                            clip-path: circle(105px at center);
-
-                            
-                            img{
-                                width: 100%;
-                                height: 300px;
-                                object-fit: contain;  
-                                clip-path: circle(100px at center);
-                                filter: grayscale(40%);
-                                
-                            
-                            }
-                        }
-        
-                    
-                    
-                }
-    
-           
-                .hr{
-                    display: none;
-                }
-        
-                .its-me{
-                    text-align: center;
-                    padding-top: 0;
-        
-              
-                    h4{
-                        font-size: 1.5rem;
-                    }
-        
-                    h1{
-                        font-size: 3rem;
-                        line-height: 1.5em;
-                        span{
-                            color: $Baby-Blue;
-                        }
-                    }
-    
-                    button{
-                        width:40%;
-                        margin-right: 2%;
-
-                    }
-                
-         
-                }
-        
-                
-                .navbar{
-                    
-                    
-               
-                    .icon{
-                        margin-top: 10%;
-                        margin-left: 10%;
-                        display: block;
-                        opacity: .9;
-                        
-                    }
-
-                    ul{
-                        display: none;
-                    }
-        
-                    
-                }
-                
-                
-                
-            }
-    
-            .main{
-
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-color: $white;
-                    
-                    .sub-main{
-                        
-                        width: 100%;                            
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        
-
-                        h1{
-                                
-                            color: $blue-2;
-                            font-family: 'poppins';
-                            font-weight: bold;
-                            font-size: 3rem;
-                            border-bottom: 3px solid $blue-2;
-                   
-                        }
-                        
-                        .education{
-                            
-                            padding: 5%;
-                            border:none;
-
-                            .education-1, .education-2, .education-3{
-                                padding: 0;
-                                color: $blue-2;
-                                margin: 2% 0;
-                              
-                                .ins{
-                                    
-                                
-                                    .fa{
-                                        color: $blue-2;
-                                        font-size: 1.5rem;
-                                    }
-                    
-                                    h2{
-                                        color: $blue-2;
-                                        font-size: 2rem;
-                                    }
-                    
-                                    p{
-                                        font-size: 1.2rem;
-            
-                                    }
-                    
-                                }
-                           
-                                
-                
-                                
-                            } 
-                            
-                            .education-3{
-                                border-bottom: none;
-                            }
-                        }
-
-
-                        
-                        
-                        
-            
-                       
-                        
-                    }
-            
-                    .sub-content{
-                        width: 100%;
-                        background-color: $blue-2;
-    
-                        h1{
-                            color: $white;
-                            font-family: 'poppins';
-                            font-weight: bold;
-                            font-size: 3rem;
-                            border-bottom: 3px solid $white;
-                   
-                        }
-            
-                        
-    
-                        .skillset-1{
-                     
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            padding: 2%;
-                       
-            
-                            .skills-1, .skills-2, .skills-3, .skills-4, .skills-5, .skills-6 {
-            
-                                h3{
-                                    color: $white;
-                                    font-size: 1.5rem;
-                                    font-weight: bold;
-                                    padding-bottom: 2px;
-                                    
-                                    i{
-                                        color: $Baby-Blue;
-                                        font-size: 1.9rem;
-                                        padding: 5px;
-                                    }
-            
-                                    
-                    
-                                    
-                                }
-            
-                                
-                                    ul{
-                                        
-                                        list-style-type: none;
-                                        li{
-                                            display: block;
-                                            padding: 10px;
-                                            cursor: pointer;
-                                            color: $white;
-                                          
-                                        }
-                                        i{
-                                            color: white;
-                                            font-size: 1.2rem;
-                                        }
-                                    }
-                                
-            
-                                
-                            .loader{
-                                width:90%;
-                                background-color: $light-grey;
-                                border-radius: 15px;
-                                color: white;
-            
-                                .html{
-                                    width: 90%;
-                                    background-color: $blue-2;
-                                    padding: 2px;
-                                    border-radius: 15px;
-                                    opacity: 0.9;
-                                    text-align: right;
-            
-                                }
-            
-                                .css{
-                                    width: 60%;
-                                    background-color: $blue-2;
-                                    padding: 3px;
-                                    border-radius: 15px;
-                                    opacity: 0.9;
-                                    text-align: right;
-                                }
-            
-                                .js{
-                                    width: 50%;
-                                    background-color: $blue-2;
-                                    padding: 3px;
-                                    border-radius: 15px;
-                                    opacity: 0.9;
-                                    text-align: right;
-                                }
-            
-                                .illustration{
-                                    width: 40%;
-                                    background-color: $blue-2;
-                                    padding: 3px;
-                                    border-radius: 15px;
-                                    opacity: 0.9;
-                                    text-align: right;
-                                    
-                                }
-            
-                                .react{
-                                    width: 30%;
-                                    background-color: $blue-2;
-                                    padding: 3px;
-                                    border-radius: 15px;
-                                    opacity: 0.9;
-                                    text-align: right;
-            
-                                }
-            
-                            }
-                                
-                               
-                            }
-            
-            
-                            
-                        }
-                    }
-            
-                   
-               
-            }
-    
-    
-            
-    
-            .portfolio{
-                width: 100%;
-                
-    
-                .cards{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    .card-1, .card-2, .card-3{
-                        width: 100%;
-                        padding: 0;
-                        background-color: $blue-2;
-                        border-bottom: 2px solid $grey;
-                    }
-                }
-            }
-    
-    
-            .know-me{
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-    
-                .about-me{
-                    
-                    h4{
-                        
-                        height: 400px;
-                        font-size: 1.3rem;
-                    }
-    
-                    p{
-                        font-size: 1.4rem;
-                    }
-                }
-    
-                .about-me-2{
-                    margin-top: 0;
-                    
-                    .part-1{
-                        width: 100%;
-                        svg{
-                            width: 50%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding-left: 25%;
-                        }
-
-                    }
-                   
-                }
-    
-    
-                
-            }
-    
-            .know-me-2{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                
-                svg{
-                    
-                    display: none;
-                }
-    
-            }
-    
-            .footer{
-                .footer-main{
-                    width: 100%;
-        
-                    .location-form{
-                        display: flex;
-                        flex-direction: column-reverse;
-                        justify-content: center;
-        
-                        .location{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-evenly;
-                            color: $blue-2;
-                            a{
-                                display: none;
-                               
-                            }
-        
-                            p{
-                                font-size: 2rem;
-                                i{
-                                    display: flex;
-                                    justify-content: center;
-        
-                                }
-                            }
-               
-                        }
-        
-                        .form{
-                            min-width: 90%;
-                            p{
-                                font-size: 1.5rem;
-                                padding: 3%;  
-                            }
-                           
-                            
-                            .name-email{
-                                padding: 3%;
-                                input{
-                                    margin-top: 10px;
-                                    width: 60%;
-                                }
-                                
-        
-                            }
-        
-                            .message{
-                                font-size: 1.7rem;
-                                padding: 2%;
-
-                                textarea{
-                                    width: 60%;
-                                }
-                            }
-        
-                            button{
-                                margin-left: 3%;
-                                font-size: 1.3rem;
-                            }
-                        }
-                    }
-        
-                }
-            }
-    
-    
-    
-    
-    
-        }
-    
-    
-    }
-  
-
-}
-
-
-@media (min-width:1025px){
-    body{
-        .container{
-            .header{
-                .navbar{
-                    .icon{
-                        display: none;
-                    }
-
-                    .round-menu{
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-    
-
-}
-
+/*# sourceMappingURL=style.css.map */
